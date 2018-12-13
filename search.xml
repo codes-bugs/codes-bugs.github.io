@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[如何建设自己的博客]]></title>
+    <url>%2F2018%2F12%2F13%2F%E5%A6%82%E4%BD%95%E5%BB%BA%E8%AE%BE%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%2F</url>
+    <content type="text"><![CDATA[NexT中文网站 NexT配置详解 如何部署到GitHub上 关于部署GitHub的ssh配置 这些应该够解决80%的问题了]]></content>
+      <categories>
+        <category>捣鼓博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>总结</tag>
+      </tags>
+  </entry>
+</search>

@@ -104,20 +104,25 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="NexT中文网站 NexT配置详解 如何部署到GitHub上 关于部署GitHub的ssh配置 这些应该够解决80%的问题了">
+<meta name="keywords" content="hexo,总结">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何建设自己的博客">
+<meta property="og:url" content="http://yoursite.com/2018/12/13/如何建设自己的博客/index.html">
 <meta property="og:site_name" content="Blog">
+<meta property="og:description" content="NexT中文网站 NexT配置详解 如何部署到GitHub上 关于部署GitHub的ssh配置 这些应该够解决80%的问题了">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-12-13T12:02:06.192Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Blog">
+<meta name="twitter:title" content="如何建设自己的博客">
+<meta name="twitter:description" content="NexT中文网站 NexT配置详解 如何部署到GitHub上 关于部署GitHub的ssh配置 这些应该够解决80%的问题了">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/12/13/如何建设自己的博客/"/>
 
 
 
@@ -127,7 +132,7 @@
   };
 </script>
 
-  <title>Blog</title>
+  <title>如何建设自己的博客 | Blog</title>
   
 
 
@@ -175,8 +180,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -213,7 +217,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -357,9 +361,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -367,6 +371,8 @@
   
   
 
+  
+    <div class="reading-progress-bar"></div>
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -391,10 +397,8 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2018/12/13/如何建设自己的博客/" class="post-title-link" itemprop="http://yoursite.com/index.html">如何建设自己的博客</a>
+          <h1 class="post-title" itemprop="name headline">如何建设自己的博客
+
               
             
           </h1>
@@ -503,16 +507,12 @@
       
 
       
-        
-          
-            <p><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">NexT中文网站</a></p>
+        <p><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">NexT中文网站</a></p>
 <p><a href="https://www.jianshu.com/p/a1f4fbb110fd" target="_blank" rel="noopener">NexT配置详解</a></p>
 <p><a href="https://blog.csdn.net/Hoshea_chx/article/details/78826689" target="_blank" rel="noopener">如何部署到GitHub上</a></p>
 <p><a href="https://xuanwo.io/2015/02/07/generate-a-ssh-key/" target="_blank" rel="noopener">关于部署GitHub的ssh配置</a></p>
 <p>这些应该够解决80%的问题了</p>
 
-          
-        
       
     </div>
 
@@ -528,19 +528,51 @@
       
     
     
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>Donate comment here</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Jn 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
 
     
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
+          
+            <a href="/tags/总结/" rel="tag"># 总结</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -550,14 +582,15 @@
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -849,6 +882,10 @@
   
 
   
+  <script src="/js/src/scrollspy.js?v=6.6.0"></script>
+<script src="/js/src/post-details.js?v=6.6.0"></script>
+
+
 
   
 
