@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[js监听Chrome Dev打开事件]]></title>
+    <url>%2F2020%2F06%2F06%2Fjs%E7%9B%91%E5%90%ACChromeDev%E6%89%93%E5%BC%80%E4%BA%8B%E4%BB%B6%2F</url>
+    <content type="text"><![CDATA[12345678910111213141516171819202122232425262728293031323334(function ()&#123;var checkStatus;var hasOpen=false;var element = new Image();var myConsole; myConsole.dir=console.dir; myConsole.log=console.log; myConsole.clear=console.clear;Object.defineProperty(element, 'id', &#123; get: function() &#123; checkStatus=true; if(!hasOpen) &#123; hasOpen=true; //处理dev第一次被打开的事件; alert("请不要打开调试器") &#125; //处理dev持续被打开的事件; alert("警告!请关闭调试器") &#125;&#125;);requestAnimationFrame(function check() &#123; checkStatus = false; myConsole.dir('%c',element); if(!checkStatus&amp;&amp;hasOpen) &#123; hasOpen=false; //处理dev持续被关闭的事件; alert("调试器以关闭") &#125; myConsole.clear(); requestAnimationFrame(check);&#125;);&#125;)() 限制 该js必须第一个执行 技术人员可能可以通过Chrome扩展来屏蔽(未验证) 技术人员可以在网页刚刚加载完成时阻止js的运行并替换console下的函数来完成屏蔽 原理 输出img对象的时候会引用到img.id属性,我们改变img.id的get逻辑添加验证 在Chrome中console.log不是一个同步方法,他会在chrome dev 打开时被执行 console.clear清理被缓存的console.log(可能会导致其他调试信息被删除)]]></content>
+      <categories>
+        <category>js小知识</category>
+      </categories>
+      <tags>
+        <tag>每天一个没用小知识</tag>
+        <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[如何建设自己的博客]]></title>
     <url>%2F2018%2F12%2F13%2F%E5%A6%82%E4%BD%95%E5%BB%BA%E8%AE%BE%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%2F</url>
     <content type="text"><![CDATA[NexT中文网站 NexT配置详解 如何部署到GitHub上 关于部署GitHub的ssh配置 这些应该够解决80%的问题了]]></content>
